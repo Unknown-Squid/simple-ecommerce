@@ -6,7 +6,8 @@ export default function InputField({
   placeholder = '', 
   error = '', 
   className = '',
-  required = false 
+  required = false,
+  name = ''
 }) {
   return (
     <div className={`w-full ${className}`}>
@@ -18,11 +19,12 @@ export default function InputField({
       )}
       <input
         type={type}
+        name={name}
         value={value}
         onChange={onChange}
         placeholder={placeholder}
         required={required}
-        className={`w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent ${
+        className={`w-full px-4 py-3 border rounded-lg text-black focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent ${
           error ? 'border-red-500' : 'border-gray-300'
         }`}
       />

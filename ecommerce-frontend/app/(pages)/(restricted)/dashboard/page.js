@@ -5,7 +5,7 @@ import { useRouter } from 'next/navigation';
 import PrimaryButton from '@/app/components/Buttons/PrimaryButton';
 import ProductCard from '@/app/components/Cards/ProductCard';
 import Tabs from '@/app/components/Tabs/Tabs';
-import Modal from '@/app/components/Modal';
+import Modal from '@/app/components/Modals/Modal';
 
 
 export default function DashboardPage() {
